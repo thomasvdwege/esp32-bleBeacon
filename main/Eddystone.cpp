@@ -52,6 +52,7 @@ std::string Eddystone::generateUrl(std::string prefix, std::string url, std::str
     std::string encoded = "";
 	encoded += (char)0x10;
     // Should be TX power, needs research (what values can I give this, to reduce or increase the power)
+    // This can be found at https://github.com/google/eddystone/tree/master/eddystone-url
 	encoded += (char)0x20;
 
     if(prefix != ""){
